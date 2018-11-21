@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>兰州大学生态学创新研究院</title>
+<link href="/Theme/default/style.css" rel="stylesheet">
+<link href="/Theme/default/bootstrap.css" rel="stylesheet">
+<script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/marquee.min.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+</head>
+<body>
+<!--头部及导航开始-->
+<div class="header">
+      <div class="container">
+	  <div class="row">
+			<div class="col-sm-9">
+			<a class="navbar-brand" href="#">
+			 <img style="margin:10px 0px;" src="/Theme/default/logo-new.png"></a>
+			 </div>
+		
+			<div class="col-sm-3 padg" >
+				<div class="fastlink">	
+					<a href="http://www.lzu.edu.cn/" class="linkbg2">兰大首页</a>				
+					<a href="#" class="linkbg1">ENGLISH</a>
+				</div>
+			</div>
+		</div>
+        </div>  
+        </div>
+</div>
+
+<nav class="navbar navbar-default">
+     <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>              
+            </div>
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+							{lzucms:menulist menutype="mainmenu"  preid=""}
+					      <li class="dropdown">							
+									<a class="dropdown-toggle" href="[field:menulink/]">[field:menuname/]</a>							
+					      <ul class="dropdown-menu">							
+									[lzucms:foreach]
+									<li>
+										<a href="[field:submenulink/]">[field:submenuname/]</a>
+									</li>
+									[/lzucms:foreach]
+								</ul>
+					      </li>
+							{/lzucms:menulist}
+            </ul>
+        </div>
+     </div>
+</nav>
+<div class="clear blank20"></div>
+<div class="clear blank20"></div>
+<div class="container">
+	<div class="row" >
+		<div class="col-md-3 col-sm-3">
+			<div class="zlmainpd">
+				<div class="title"><h3>{lzucms:attr attr="boardname" boardid=""/}</h3></div>
+				<ul>
+				{lzucms:columnlist boardid="" boardtype=""}
+			    <li>
+						<a href="[field:boardlink/]" title="[field:boardname/]">[field:boardname/]</a>
+			    </li>
+			  {/lzucms:columnlist}        
+				</ul>
+			</div>
+			<div class="clear blank20"></div>			
+		</div>
+			<div class="col-md-9 col-sm-9">
+									<div class="rmain">
+				{lzucms:columnnewslist boardid="" row="" titlelen='' abstractlen='' subtitlelen="" bodylen=""  newstype=""}	
+				<h3><a href="[field:boardlink/]">more</a>[field:boardname/]</h3>
+				<ul class="teacher">
+					[lzucms:foreach]
+				<li><img src="[field:imgpath/]"/><a href='[field:link/]'>[field:title/]</a></li> 
+					[/lzucms:foreach]				 
+				</ul>
+				<div class="clear"></div>
+				{/lzucms:columnnewslist} 
+				</div>
+			</div>
+  </div>
+</div>
+<div class="clear blank20"></div>
+<!--底部-->
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+			<div class="col-sm-2 col-md-2"></div>
+			<div class="col-sm-2 col-md-2">
+				<div class="box">
+              <a href="http://bszs.conac.cn/sitename?method=show&id=5701B3C7A3E46C8FE053022819AC1458" target="_blank"><img src="/Theme/default/sy-logo.png"/></a> 
+            </div>
+			</div>
+            <div class="col-sm-6 col-md-6">
+				<p>学院地址：甘肃省兰州市天水南路222号兰州大学贵勤楼 生态学创新研究院</p>            
+                <p >联系电话：0931-8915350      传真：0931-8915251      电子邮箱：iie@lzu.edu.cn</p>
+			</div>
+			<div class="col-sm-2 col-md-2"></div>
+        </div>
+    </div>
+</div>
+<style>
+.zlmainpd .title h3 {  font: normal 25px/80px 'Microsoft yahei';}
+body{background:url(/Theme/default/bg-new.png) bottom no-repeat #fff;}
+<style>
+</body>
+</html>

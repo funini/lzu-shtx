@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>兰州大学生态学创新研究院</title>
+<link href="/Theme/default/style.css" rel="stylesheet">
+<link href="/Theme/default/bootstrap.css" rel="stylesheet">
+<script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/menu.js"></script>
+<script type="text/javascript" src="/js/marquee.min.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+</head>
+<body>
+<!--头部及导航开始-->
+<div class="header">
+      <div class="container">
+	  <div class="row">
+			<div class="col-sm-9">
+			<a class="navbar-brand" href="#">
+			 <img style="margin:10px 0px;" src="/Theme/default/logo-new.png"></a>
+			</div>
+			<div class="col-sm-3 padg" >
+				<div class="fastlink">	
+					<a href="#" class="linkbg2">兰大首页</a>				
+					<a href="#" class="linkbg1">ENGLISH</a>
+				</div>
+			</div>
+		</div>
+        </div>  
+        </div>
+</div>
+
+<nav class="navbar navbar-default">
+     <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>              
+            </div>
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+							{lzucms:menulist menutype="mainmenu"  preid=""}
+					      <li class="dropdown">							
+									<a class="dropdown-toggle"href="[field:menulink/]">[field:menuname/]</a>							
+					      <ul class="dropdown-menu">							
+									[lzucms:foreach]
+									<li>
+										<a href="[field:submenulink/]">[field:submenuname/]</a>
+									</li>
+									[/lzucms:foreach]
+								</ul>
+					      </li>
+							{/lzucms:menulist}
+            </ul>
+        </div>
+     </div>
+</nav>
+<div class="banner" style="background-position:0px -40px;height:295px;"></div>
+<div class="clear blank20"></div>
+<div class="clear blank20"></div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-3 col-sm-3" style="background:#ebf2f3;">
+			<div class="zlmainpd" >
+				<div class="title"><h3>{lzucms:news name='boardname'/}</h3></div>		
+				</div>
+				<div class="clear blank20"></div>
+						</div>
+		<div class="col-md-9 col-sm-9">
+<div class="path"><div id="position"> 您的位置：<a href="http://lzucms2.lzu.edu.cn:9090/shtx/index.html">网站首页</a> > <lzucms:cn.edu.lzu.cnc.tag.News("0")>>"position"/> > 正 文 </div>
+</div>
+		<div class="article">
+		<h3><lzucms:cn.edu.lzu.cnc.tag.News("0")>>"title"/></h3>  
+		<div class="infoBox">发布时间：2011-06-22 09:34  浏览次数540  字体大小<span class="small" title="" id="fontSmall">T</span>|<span class="big" title="" id="fontBig">T</span> </div>
+		<div id="news">
+			<lzucms:cn.edu.lzu.cnc.tag.News("0")>>"content"/>
+			<lzucms:cn.edu.lzu.cnc.tag.News("0")>>"accessory"/>
+		</div>				  
+		<div class="clear blank10"></div>
+		<div class="page"><img src="/Theme/default/B_print.gif" onclick="window.print()" /> <img src="/Theme/default/B_close.gif"  onclick="javascript:self.close()" /> <img src="/Theme/default/B_top.gif" onclick="location.href='#'" /></div>
+		<div class="clear blank10"></div>
+		<div class="other">
+		<p><strong>上一篇：</strong>{lzucms:news name='pre'/}</p>
+		<p><strong>下一篇：</strong>{lzucms:news name='next'/}</a></p>
+		</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="clear blank20"></div>
+<!--Dibu-->
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+			<div class="col-sm-2 col-md-2"></div>
+			<div class="col-sm-2 col-md-2">
+				<div class="box">
+              <a href="http://bszs.conac.cn/sitename?method=show&id=5701B3C7A3E46C8FE053022819AC1458" target="_blank"><img src="/Theme/default/sy-logo.png"/></a> 
+            </div>
+			</div>
+            <div class="col-sm-6 col-md-6">
+				<p>学院地址：甘肃省兰州市天水南路222号兰州大学贵勤楼 生态学创新研究院</p>            
+                <p >联系电话：0931-8915350      传真：0931-8915251      电子邮箱：iie@lzu.edu.cn</p>
+				
+			</div>
+			<div class="col-sm-2 col-md-2"></div>
+        </div>
+    </div>
+</div>
+<style>
+.path{    background: #f9f8f8; width: 95%; border-bottom: 4px solid #f7f7f7;padding: 10px;margin: 0 0 15px 0; font: 14px Tahoma;border-left: none;
+ border-right: none; text-align:left; color: #999;cursor: pointer;margin-left: 20px;}
+body{background:url(/Theme/default/bg-new.png) bottom no-repeat #fff;}
+#position a{color:#999;}
+.rmain h3 a { float:none;width:auto;  font: normal 20px/45px "Microsoft yahei";
+    overflow: hidden;  padding: 0 8px; background: none; text-indent:2px;margin-top: 8px; color:#42c24f;}
+.rmain h3 a:hover{font:normal 20px/45px  "microsoft yahei"}
+#position a:hover{color:#42c24f;}
+.zlmainpd .title h3 { font: normal 25px/80px 'Microsoft yahei'; margin: 0 0;}
+<style>
+</body>
+</html>

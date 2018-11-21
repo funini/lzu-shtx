@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+<body>
+		<div class="container-fuild">
+			<div class="top_login">
+				<div class="container">
+					<span><a href="http://www.lzu.edu.cn">Login Lanzhou University</a></span>
+					<span><a href=" http://sph.lzu.edu.cn">中文</a></span>
+				</div>
+			</div>
+			<div class="logo container">
+				<img class="logo_pic" src="/Theme/default/logo.png"/>
+				<nav class="navbar"role="navigation">				
+					<div class="container navbar-header indent_lr15">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+							<span class="sr-only">切换导航</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>							
+						</button>						
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+					<div class="collapse navbar-collapse" id="example-navbar-collapse">
+						<ul class="nav navbar-nav" style="float:right;">
+							{lzucms:menulist menutype="mainmenu"  preid=""}	
+				      <li class="nav_item"><a href="[field:menulink/]">[field:menuname/]</a></li>				        
+				    	{/lzucms:menulist}
+						</ul>
+					</div>
+				</nav>
+			</div>
+			</div>
+			<div class="container-fluid indent_lr15">
+				<img class="bannersub" src="/Theme/default/bannersub(1).png" />
+			</div>
+			<div class="container">
+				<div class="row lmain">
+					<div class="lmain_com col-lg-3 col-xs-12 indent_l15">
+						<div class="nav_sub">
+							<div class="title"><h3>{lzucms:attr attr="boardname" boardid="" isparent="parent"/}</h3></div>
+							<ul class="nav_ul">
+								{lzucms:columnlist boardid="" boardtype="parent"}
+									<li class="nav_li">
+										<a href='[field:boardlink/]'>[field:boardname/]</a>
+									</li>
+								{/lzucms:columnlist}
+							</ul>
+						</div>
+					  
+						 
+					</div>
+				<div class="clear blank20"></div>
+					<div class="rmain col-lg-9 " style="margin-top:20px;">
+
+							{lzucms:news name='content' boardid='1'/}
+						
+
+					</div>
+				</div>
+			</div>
+			<!--footer开始-->
+			<div class="footer">
+				<div class="container">
+					<div class="copyright_top">						
+						<div class="col-lg-7">
+							<div class="item_title bor_bot">Address</div>
+							<span class="item_list">Qinbo Building, School of Public Health, East Campus of Lanzhou University, 199 West Donggang R.D., Lanzhou, P.R.China.</span>
+						</div>
+						<div class="col-lg-5">
+							<div class="item_title bor_bot">Contact us</div>
+							<span class="item_list">Post code:730,000</span>   <span class="item_list">Tel: (0931)8915008</span>   <span class="item_list">Fax: (0931)8915008</span>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					<span>COPYRIGHT:2016 @ SCHOOL OF PUBLIC HEALTH, LANZHOU UNIVERSITY</span>
+				</div>
+			</div>
+			<!--footer结束-->
+			<style>
+			.bor_bot{font-size:20px;height:35px;background:url(/Theme/default/bor_bot.png) 0px 32px no-repeat;margin-bottom:15px;}
+.rmain p{margin:0 0 10px;}
+.lmain_com h3, .title h3{padding-left:0px;text-align:center;}
+			</style>
+		</div>
+	</body>
+</html>
